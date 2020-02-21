@@ -1,0 +1,46 @@
+p {
+    font-family: 'Raleway', sans-serif;
+    margin-left: 1.66%;
+    font-size: 23px;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-bottom: 2px solid #f1f1f1;
+    width: 30%;
+    padding-bottom: 20px;
+}
+
+.img {
+    height: 300px;
+    width: 30%;
+    float: left;
+    margin: 1.66%;
+    background-size: cover;
+    background-position: center center;
+}
+.img1 {
+    background-image: url("https://i.imgur.com/eH0WJDZ.jpg");
+}
+.img2 {
+    background-image: url("https://i.imgur.com/eH0WJDZ.jpg");
+}
+.img3 {
+    background-image: url("https://i.imgur.com/eH0WJDZ.jpg");
+}
+.img4 {
+    background-image: url("https://i.imgur.com/2uw9l8P.png");
+}
+.img5 {
+    background-image: url("https://i.imgur.com/mpJ980L.png");
+}
+.img6 {
+    background-image: url("https://i.imgur.com/HMEBIDb.png");
+}
+.img7 {
+    background-image: url("https://i.imgur.com/MoXvP92.png");
+}
+.img8 {
+    background-image: url("https://i.imgur.com/ZOc1eE8.png?1");
+}
+.img9 {
+    background-image: url("https://i.imgur.com/55Txd7e.png");
+}
