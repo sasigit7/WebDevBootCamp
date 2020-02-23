@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+</head>
+
+<body>
+    <h1>To Do List</h1>
+    <ul>
+        <li>"new" - Add A Todo</li>
+        <li>"list" - List All Todos</li>
+        <li>"delete" - Remove Specific Todo</li>
+        <li>"quit" - Quit App</li>
+    </ul>
+    <script>
+        // window.setTimeout(function () {
+        var todos = ["Buy New MacBook"];
+        var input = prompt("What would you like to do?");
+
+        function listTodos() {
+            console.log("**********");
+            todos.forEach(function (todo, i) {
+                console.log(i + ": " + todo);
+            });
+            console.log("**********");
+            // console.log(todos);
+        }
+
+        function addTodo() {
+            //Ask for new todo
+            var newTodo = prompt("Enter new todo!");
+            //Add to todos Array
+            todos.push(newTodo);
+            console.log("Added todo");
+        }
+
+        function deleteTodo() {
+            //Ask for index of todo to be deleted
+            var index = prompt("Enter index of todo to delete");
+            // delete that todo
+            // Use splice() method to remove any part of the array
+            todos.splice(index, 1);
+            console.log("Deleted todo");
+        }
+        while (input !== "quit") {
+            // Handle the input
+            if (input === "list") {
+                listTodos();
+            } else if (input === "new") {
+                addTodo();
+            } else if (input === "delete") {
+                deleteTodo();
+            }
+            // Ask again for new input 
+            input = prompt("What would you like to do?");
+        }
+        console.log("Okay, You Quit the App");
+        // }, 500);
+    </script>
+</body>
+
+</html>

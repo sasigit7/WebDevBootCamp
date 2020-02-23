@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game </title>
+</head>
+
+<body>
+    <h1>Guessing Game</h1>
+    <script>
+        // Create a secret number 
+        var secretNum = 7;
+        // Ask user to guess it
+        var stringGuessNum = prompt("Guess a number!");
+        //prompt always returns a string, 
+        var guessNum = Number(stringGuessNum);
+        // So, Use Number() method to convert that string into a number.
+        // Check if that guess is correct
+        if (guessNum === secretNum) {
+            alert("Hurray! You got it right!");
+        }
+        // Check if that guessNum is higher
+        else if (guessNum > secretNum) {
+            alert("Too high!, Guess again!");
+        }
+        // Check if that guessNum is lower
+        else if (guessNum < secretNum) {
+            alert("Too low!, Guess again!");
+        }
+        // Anything entered other than a number, display that it's not a number message
+        else {
+            alert("Oops! That's not a number!");
+        }
+    </script>
+</body>
+
+</html>
