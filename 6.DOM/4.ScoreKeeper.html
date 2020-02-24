@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper</title>
+
+    <!-- CSS -->
+    <style>
+        .winner {
+            color: green;
+        }
+
+        h2 {
+            font-size: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Score Keeper Game</h1>
+    <hr>
+    <hr>
+
+    <h2><span id="p1Display">0</span> to <span id="p2Display">0</span></h2>
+
+    <p>Playing to: <span>5</span></p>
+
+    <input type="number">
+    <button id="p1">Player One</button>
+    <button id="p2">Player Two</button>
+    <button id="reset">Reset</button>
+
+    <!-- JavaScript -->
+    <script>
+        var winningScore = 5;
+        var gameOver = false;
+
+        //  Player One: 
+        var p1Button = document.getElementById("p1");
+        var p1Display = document.getElementById("p1Display");
+        var p1Score = 0;
+        p1Button.addEventListener("click", function () {
+            // alert("P1 Clicked");
+            if (!gameOver) {
+                p1Score++;
+                if (p1Score === winningScore) {
+                    p1Display.classList.add("winner");
+                    // console.log("Game Over");
+                    gameOver = true;
+                }
+                // console.log(p1Score++);
+                p1Display.textContent = p1Score;
+            }
+        });
+
+        // Player Two: 
+        var p2Button = document.getElementById("p2");
+        var p2Display = document.getElementById("p2Display");
+        var p2Score = 0;
+        p2Button.addEventListener("click", function () {
+            // alert("P2 Clicked");
+            if (!gameOver) {
+                p2Score++;
+                if (p2Score === winningScore) {
+                    p2Display.classList.add("winner");
+                    // console.log("Game Over");
+                    gameOver = true;
+                }
+                // console.log(p2Score++);
+                p2Display.textContent = p2Score;
+            }
+        });
+
+        // Reset: 
+        var resetButton = document.getElementById("reset");
+        resetButton.addEventListener("click", function () {
+            // console.log("RESET CLICKED!");
+            reset();
+        });
+
+        function reset() {
+            p1Score = 0;
+            p1Display.textContent = 0;
+            p2Score = 0;
+            p2Display.textContent = 0;
+
+            p1Display.classList.remove("winner");
+            p2Display.classList.remove("winner");
+            gameOver = false;
+        }
+
+        // Input Field:
+        var winningScoreDisplay = document.querySelector("p span");
+        var numInput = document.querySelector("input");
+        numInput.addEventListener("change", function () {
+            // alert("Changed the input");
+            winningScoreDisplay.textContent = this.value;
+            winningScore = Number(this.value);
+            reset();
+        });
+    </script>
+</body>
+
+</html>
