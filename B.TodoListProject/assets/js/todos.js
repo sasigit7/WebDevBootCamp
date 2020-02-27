@@ -63,7 +63,6 @@ $("input[type='text']").keypress(function (event) {
         //Create a new li and add to ul
         $("ul").append("<li><span><i class='fa fa-trash'></i></span> " + todoText + "</li>");
     }
-
 });
 
 // Toggling the form

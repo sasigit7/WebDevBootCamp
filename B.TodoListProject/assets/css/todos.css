@@ -35,6 +35,11 @@ li {
     color: #666;
 }
 
+li:hover span {
+    width: 40px;
+    opacity: 1.0;
+}
+
 .fa-plus {
     float: right;
 }
@@ -81,9 +86,4 @@ span {
     display: inline-block;
     transition: 0.2s linear;
     opacity: 0;
-}
-
-li:hover span {
-    width: 40px;
-    opacity: 1.0;
 }
