@@ -14,9 +14,9 @@
     <!-- Define inlined PaperScript associate it with myCanvas -->
     <script type="text/paperscript" canvas="myCanvas">
         //:::::::::::::::::::::::::: HOWLER JS CODE Start ::::::::::::::::::::::::::::::
-// var sound = new Howl({
-//     src: ['sounds/bubbles.mp3']
-// }).play();
+    // var sound = new Howl({
+    //     src: ['sounds/bubbles.mp3']
+    // }).play();
 
     var keyData = {
     q: {
@@ -206,7 +206,7 @@
     function onFrame(event) {
         for(var i =0; i < circles.length; i++) {
             circles[i].fillColor.hue +=1;
-            circles[i].scale(.9);
+            circles[i].scale(.99);
         }
         // animatedCircle.fillColor.hue += 1; 
     }
