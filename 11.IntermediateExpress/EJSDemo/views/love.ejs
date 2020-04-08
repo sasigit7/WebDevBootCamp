@@ -1,0 +1,31 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo App</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body> -->
+    <!-- Include header template -->
+    <% include partials/header %>
+
+    <h1>You fell in love with: <%= thingVar.toUpperCase() %> </h1>
+
+    <% if(thingVar.toLowerCase() === "Shashi") { %>
+    <p>Good Choice! Shashi is the best!</p>
+    <% } else { %>
+    <p>Bad Choice! Shashi is not the best!</p>
+    <% } %>
+
+    <p>P.S. This is the love.ejs file</p>
+
+    <!-- Include footer template -->
+   <% include partials/footer %>
+
+
+<!-- </body>
+
+</html> -->
