@@ -1,0 +1,11 @@
+<h1>This is the Campgrounds Page!</h1>
+
+<!-- <%= campgrounds %> Check to see all working: [object Object],[object Object],[object Object] -->
+
+<!-- Loop through Campgrounds using forEach -->
+<% campgrounds.forEach(function(campground) { %>
+<div>
+    <h4><%= campground.name %></h4>
+    <img src="<%= campground.image %>">
+</div>
+<% }); %>
