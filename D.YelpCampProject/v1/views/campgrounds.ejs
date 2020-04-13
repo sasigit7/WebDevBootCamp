@@ -1,7 +1,8 @@
+<!-- Include Header Partial -->
+<%- include("partials/header") %>
+
 <h1>This is the Campgrounds Page!</h1>
-
 <!-- <%= campgrounds %> Check to see all working: [object Object],[object Object],[object Object] -->
-
 <!-- Loop through Campgrounds using forEach -->
 <% campgrounds.forEach(function(campground) { %>
 <div>
@@ -9,3 +10,6 @@
     <img src="<%= campground.image %>">
 </div>
 <% }); %>
+
+<!-- Include Footer Partial -->
+<%- include("partials/footer") %>
