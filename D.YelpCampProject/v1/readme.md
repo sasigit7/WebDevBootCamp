@@ -12,4 +12,10 @@
 * Create our header and footer partials
 * Add in BootStrap
 
+# Creating New Campgrounds
 
+* Setup new campground POST route 
+* Add in body-parser
+* Setup Route to show form 
+* Add basic unstyled form 
+  
