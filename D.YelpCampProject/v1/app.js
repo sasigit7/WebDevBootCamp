@@ -14,15 +14,35 @@ app.set("view engine", "ejs");
 // In order to push the new campground, this campground array has to be moved out of the campground route: 
 var campgrounds = [{
     name: "Nature Camp",
-    image: "https://pixabay.com/get/50e9d4474856b10ff3d8992ccf2934771438dbf85254794f732a72d49748_340.jpg"
+    image: "https://pixabay.com/get/57e8d1454b56ae14f1dc84609620367d1c3ed9e04e507441722f72dd9444cd_340.jpg"
 },
 {
     name: "Friends Camp",
-    image: "https://pixabay.com/get/52e8d4444255ae14f1dc84609620367d1c3ed9e04e50744173297edd974dc0_340.jpg"
+    image: "https://pixabay.com/get/52e8d4444255ae14f1dc84609620367d1c3ed9e04e507441722f72dd9444cd_340.jpg"
 },
 {
     name: "Sunrise Camp",
-    image: "https://pixabay.com/get/52e5d7414355ac14f1dc84609620367d1c3ed9e04e50744173297edd974dc0_340.jpg"
+    image: "https://pixabay.com/get/57e1dd4a4350a514f1dc84609620367d1c3ed9e04e507441722f72dd9444cd_340.jpg"
+}, 
+{
+    name: "Nature Camp",
+    image: "https://pixabay.com/get/57e8d1454b56ae14f1dc84609620367d1c3ed9e04e507441722f72dd9444cd_340.jpg"
+},
+{
+    name: "Friends Camp",
+    image: "https://pixabay.com/get/52e8d4444255ae14f1dc84609620367d1c3ed9e04e507441722f72dd9444cd_340.jpg"
+},
+{
+    name: "Sunrise Camp",
+    image: "https://pixabay.com/get/57e1dd4a4350a514f1dc84609620367d1c3ed9e04e507441722f72dd9444cd_340.jpg"
+},
+{
+    name: "Nature Camp",
+    image: "https://pixabay.com/get/57e8d1454b56ae14f1dc84609620367d1c3ed9e04e507441722f72dd9444cd_340.jpg"
+},
+{
+    name: "Friends Camp",
+    image: "https://pixabay.com/get/52e8d4444255ae14f1dc84609620367d1c3ed9e04e507441722f72dd9444cd_340.jpg"
 }
 ];
 
