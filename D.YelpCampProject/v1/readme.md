@@ -19,7 +19,7 @@
 * Setup Route to show form 
 * Add basic unstyled form 
   
-# Styling the Campgrounds Page: 
+# Styling Campgrounds Page: 
 
 * Add a better header/title 
 * Make campgrounds display in a grid
