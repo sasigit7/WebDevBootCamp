@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Toggle Exercise</title>
+</head>
+
+<body>
+    <h1>Color Toggle Exercise</h1>
+    <!-- Toggle the body's background color between purple and white, 
+     when a button is clicked -->
+    <button>Click Me</button>
+    <script>
+        var button = document.querySelector("button");
+        var isPurple = false;
+
+        button.addEventListener("click", function () {
+            if (isPurple) {
+                document.body.style.backgroundColor = "white";
+            } else {
+                document.body.style.backgroundColor = "purple";
+            }
+            isPurple = !isPurple;
+        });
+    </script>
+</body>
+
+</html>
