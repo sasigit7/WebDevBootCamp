@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops: for vs forEach vs while </title>
+</head>
+<body>
+    <h1>Loops comparison: for vs forEach vs while</h1>
+    <script>
+       // For Loop:
+        var colors = ["orange", "brown", "black"];
+        for(var i = 0; i < colors.length; i++) {
+            console.log(colors[i]);
+        }
+        
+        // forEach Loop: 
+        var colors1 = ["yellow", "white", "red"];
+        colors1.forEach(function() {
+            console.log(colors1);
+        });
+
+        // while loop:
+        var colors2 = ["red", "green", "blue"];
+        var count = 0;
+        while(count < colors2.length) {
+            console.log(colors2[count]);
+            count++;
+        }
+
+    </script>
+</body>
+</html>

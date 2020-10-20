@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annoy-O-Matic</title>
+</head>
+
+<body>
+    <h1>Annoy-O-Matic</h1>
+    <script>
+        // Ask the user "Are we there yet"
+        var answer = prompt("Are we there yet?");
+        //Using if else condition: Inefficient as it will execute only twice if we type anything other than "yes".
+        // if(answer === "yes") {
+        //     alert("YaY! We made it!");
+        // } else {
+        //     var answer = prompt("Are we there yet?");
+        // }
+        // Keep asking again and again until user enter "yes" OR "yeah"
+        // Using while loop : 
+        // while(answer !== "yes" && answer !== "yeah") {
+        //   var answer = prompt("Are we there yet?");
+        // }
+        // Then, alert "YaY! We mage it!". 
+        // alert("YaY! We made it!");
+        // A user can enter any string as long as it contains "yes" in it
+        while (answer.indexOf("yes") === -1) {
+            var answer = prompt("Are we there yet?");
+        }
+        alert("YaY! We made it!");
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Check using Conditionals</title>
+</head>
+
+<body>
+    <h1>
+        Age Check using Conditionals
+    </h1>
+    <script>
+        // Get age and convert it to a number (prompt always returns a string)
+        var age = Number(prompt("What is your age?"));
+        // If age is negative
+        if (age < 0) {
+            console.log("Come back once you're out of the womb!");
+        }
+        // if age is 21
+        if (age === 21) {
+            console.log("Happy 21st Birthday!");
+        }
+        // If age is odd (Not evenly divisible by two)
+        if (age % 2 !== 0) {
+            console.log("Your age is odd!");
+        }
+        // If age is a perfect square
+        if (age % Math.sqrt(age) === 0) {
+            console.log("Your age is a perfect square!");
+        }
+    </script>
+</body>
+
+</html>
